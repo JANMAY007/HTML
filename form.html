@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>forms</title>
+</head>
+
+<body>
+    <form action="send.php" name="employee">
+        <table width="50%" cellspacing="2" cellpadding="2">
+            <tr>
+                <td>Employeement Form</td>
+                <td></td>
+            </tr>
+            <tr>
+                <td>First Name</td>
+                <td><input type="text" name="fname" maxlength="50"></td>
+            </tr>
+            <tr>
+                <td>Last Name</td>
+                <td><input type="text" name="lname" maxlength="50"></td>
+            </tr>
+            <tr>
+                <td>Position</td>
+                <td>
+                    <select name="position" id="pos">
+                            <option value="acc">Accountant</option>
+                            <option value="wor">Worker</option>
+                            <option value="man">Manager</option>
+                            <option value="con">Consultant</option>
+                        </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Experience</td>
+                <td>
+                    <select name="experience" id="exp">
+                            <option value="first">Beginner</option>
+                            <option value="second">Intermediate</option>
+                            <option value="third">Advance</option>
+                            <option value="fourth">Expert</option>
+                        </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Job Type</td>
+                <td>
+                    <input type="checkbox" name="ft" id="tf">Full time
+                    <input type="checkbox" name="pt" id="tp">Part time
+                    <input type="checkbox" name="ct" id="tc">Contract
+                </td>
+            </tr>
+            <tr>
+                <td>Employeement Status</td>
+                <td>
+                    <input type="radio" name="em" id="me">Employeed
+                    <input type="radio" name="un" id="nu">Unemployeed
+                    <input type="radio" name="st" id="ts">Student
+                </td>
+            </tr>
+            <tr>
+                <td>Additional Comments</td>
+                <td><textarea name="comments" id="com" cols="30" rows="10"></textarea></td>
+            </tr>
+            <tr>
+                <td></td>
+                <td>
+                    <input type="submit" value="submit" name="Submit">
+                    <input type="reset" value="reset" name="Reset">
+                </td>
+            </tr>
+        </table>
+    </form>
+</body>
+
+</html>
